@@ -1,4 +1,6 @@
-# frontend-assignment
- Clone the repo
- install the modules
- npm start to start the app
+# Animall
+## _Frontend Assignment_
+
+ - Clone the repo
+ - Install the modules
+ - `npm start` to start the app
