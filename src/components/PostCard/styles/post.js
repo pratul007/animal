@@ -72,13 +72,10 @@ export const CallButtonImage = styled.img`
 
 export const Date = styled.div`
     padding-top: 5px;
-    font-size: 10px;
-    font-weight: 500;
+    font-size: 8px;
+    font-weight: 400;
     color: #000000;
-    flex-basis:45%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    flex-basis:55%;
 `;
 
 export const Location = styled.div`
