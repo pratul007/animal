@@ -20,14 +20,20 @@ export const Container = styled.div`
     width: 320px;
     border-radius: 8px;
     border: 1px solid black;
-    padding : 20px 0;
+    padding : 10px;
     box-sizing: border-box;
 
 `;
+export const Resources = styled.div`
+    height: 150px;
+    width: 100%;
+    background: #eee;
+    margin-bottom: 10px;
+`;
 
 export const Image = styled.img`
-    width: 280px;
-    height: 150px;
+    width: 100%;
+    height: 100%;
     object-fit: contain;
 `;
 
@@ -40,10 +46,10 @@ export const PostDescription = styled.div`
 
 export const Group = styled.div`
     display: flex;
-    justify-content : space-between
+    justify-content : space-between;
     margin: 0 auto;
     align-items:center;
-    width: 90%;
+    width: 100%;
     padding-top: ${({padding}) => padding || 0}px;
 `;
 
@@ -67,7 +73,7 @@ export const CallButton = styled.a`
 
 export const CallButtonImage = styled.img`
     max-width: 100%;
-    height: 40px; 
+    height: 40px;
 `;
 
 export const Date = styled.div`
@@ -88,4 +94,3 @@ export const Location = styled.div`
     justify-content: flex-end;
     align-items: center;
 `;
-

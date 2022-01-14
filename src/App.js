@@ -1,7 +1,9 @@
-import {useEffect, useState} from 'react';
-import axios from 'axios';
-import Post from './Post';
 import './App.css';
+
+import {useEffect, useState} from 'react';
+
+import Post from './Post';
+import axios from 'axios';
 
 function App() {
   const [data, setData] = useState([]);
@@ -18,12 +20,15 @@ function App() {
   },[])
   return (
     <div className="App">
-      <div className="holder">
-      {data.map((post,index) => {
-          return (<Post key={index} data={post} />)
-        }) 
-      }
-      </div>
+        <div className="App-header">
+            <img src="https://static-assets.animall.in/static/images/animall-logo-2021.png" alt="Animall" width="147" height="51"/>
+        </div>
+        <div className="holder">
+            {data.map((post,index) => {
+                return (<Post key={index} data={post} />)
+            })
+            }
+        </div>
     </div>
   );
 }

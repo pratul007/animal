@@ -1,15 +1,15 @@
-
 import {
-    Container,
-    PostHeading,
-    Image,
-    PostDescription,
-    Group,
-    Price,
     CallButton,
     CallButtonImage,
+    Container,
     Date,
-    Location
+    Group,
+    Image,
+    Location,
+    PostDescription,
+    PostHeading,
+    Price,
+    Resources
 } from './styles/post';
 
 export default function PostCard({children, ...restProps}){
@@ -18,6 +18,10 @@ export default function PostCard({children, ...restProps}){
 
 PostCard.PostHeading = function PostCardPostHeading({children, ...restProps}){
     return <PostHeading {...restProps}>{children}</PostHeading>
+}
+
+PostCard.Resources = function PostCardResources({children, ...restProps}){
+    return <Resources {...restProps}>{children}</Resources>
 }
 
 PostCard.Image = function PostCardImage({children, resource, ...restProps}){
