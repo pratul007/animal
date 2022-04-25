@@ -36,6 +36,22 @@ export const Image = styled.img`
     height: 100%;
     object-fit: contain;
 `;
+export const Image1 = styled.img`
+    width: 45%;
+    height: 100%;
+    padding: 2px;
+    object-fit: contain;
+`;
+export const Image2 = styled.img`
+    width: 50%;
+    height: 50%;
+    object-fit: contain;
+`;
+export const Image3 = styled.img`
+    width: 145px;
+    height: 49%;
+    object-fit: contain;
+`;
 
 export const PostDescription = styled.div`
     font-size: 12px;
@@ -50,7 +66,7 @@ export const Group = styled.div`
     margin: 0 auto;
     align-items:center;
     width: 100%;
-    padding-top: ${({padding}) => padding || 0}px;
+    padding-top: ${({ padding }) => padding || 0}px;
 `;
 
 export const Price = styled.div`

@@ -1,7 +1,6 @@
-export function checkCoordinatesDistance(lat1,lon1,lat2,lon2){
-    console.log('DISTANCE CHECK: ', lat1, lon1, lat2, lon2);
-    let dLat,dLon,a,c,d;
-    if (lat2 && lon2) {
+export function checkCoordinatesDistance(lat1, lon1, lat2, lon2) {
+    let dLat, dLon, a, c, d;
+    if (lat2 && lon2 && lat1 && lon1) {
         const R = 6371; // Radius of the earth in km
 
         dLat = (lat2 - lat1) * (Math.PI / 180);
